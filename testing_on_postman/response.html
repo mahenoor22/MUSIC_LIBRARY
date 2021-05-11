@@ -1,0 +1,31 @@
+
+
+<html>
+<head>
+	<title>Homepage</title>
+</head>
+
+<body>
+	<a href="index.php">Home</a> | <a href="fetch_songs.php">View Songs</a> | <a href="add_song.php">Add Song</a> | <a href="add_album.php">Add Album</a> | <a href="add_artist.php">Add Artist</a> </a>
+	<br/><br/>
+	<form action="fetch_songs.php" method="post">
+	<input type="text" name="search">
+	<select name="search_opt" id="search_opt">
+		<option value="song">Search by song</option>
+		<option value="artist">Search by artist</option>
+		<option value="duration">Search by duration</option>
+	</select>
+	<input type="submit" name="submit" value="Search">
+	</form>
+	<table width='80%' border=0>
+		<tr bgcolor='#CCCCCC'>
+			<td>Name</td>
+			<td>Album</td>
+			<td>Artist</td>
+			<td>duration</td>
+			<td>year</td>
+			<td>Update</td>
+		</tr>
+		<tr><td>abc</td><td>Peace Sells</td><td>Megadeth</td><td>12</td><td>2019</td><td><a href="edit.php?id=3">Edit</a> | <a href="delete.php?id=3" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td></tr><tr><td>example</td><td>abc</td><td>Anthrax</td><td>6000</td><td>2192</td><td><a href="edit.php?id=6">Edit</a> | <a href="delete.php?id=6" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td></tr>	</table>	
+</body>
+</html>

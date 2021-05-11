@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Add Artist</title>
+</head>
+
+<body>
+	<a href="index.php">Home</a> | <a href="add_artist.php">Add Artist</a> | <a href="add_album.php">Add Album</a> | <a href="fetch_songs.php">View Songs</a>
+	<br/><br/>
+
+	<form action="add.php" method="post" name="form1">
+		<table width="25%" border="0">
+			<tr> 
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<br>
+			<tr>
+			<label>Artist:<select name="artist"><option value="">Select</option><option value="Megadeth">Megadeth</option><option value="Anthrax">Anthrax</option><option value="Eric Clapton">Eric Clapton</option><option value="ZZ Top">ZZ Top</option><option value="Van Halen">Van Halen</option><option value="Lynyrd Skynyrd">Lynyrd Skynyrd</option><option value="AC/DC">AC/DC</option><option value="The Beatles">The Beatles</option><br />
+<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\xampp\htdocs\Music_library\add_song.php</b> on line <b>32</b><br />
+<option value=""></option></select></label>			</tr>
+			<br>
+			<tr> 
+				<label>Album:<select name="album"><option value="">Select</option><option value="Black Album">Black Album</option><option value="Master of Puppets">Master of Puppets</option><option value="Endgame">Endgame</option><option value="Peace Sells">Peace Sells</option><option value="The Greater of 2 Evils">The Greater of 2 Evils</option><option value="Reptile">Reptile</option><option value="Riding with the King">Riding with the King</option><option value="Greatest Hits">Greatest Hits</option><option value="Greatest Hits">Greatest Hits</option><option value="All-Time Greatest Hits">All-Time Greatest Hits</option><option value="Greatest Hits">Greatest Hits</option><option value="Sgt. Pepper's Lonely Hearts Club Band">Sgt. Pepper's Lonely Hearts Club Band</option><option value="mahenoor">mahenoor</option><option value="abc">abc</option><br />
+<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\xampp\htdocs\Music_library\add_song.php</b> on line <b>57</b><br />
+<option value=""></option></select></label>			</tr>
+			<tr> 
+				<td>Duration</td>
+				<td><input type="text" name="duration"></td>
+			</tr>
+			<tr> 
+				<td>year</td>
+				<td><input type="text" name="year"></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
